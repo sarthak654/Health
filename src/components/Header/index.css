@@ -1,0 +1,132 @@
+.header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--teal);
+    text-decoration: none;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav ul li {
+    margin-left: 20px;
+  }
+  
+  .main-nav ul li a {
+    color: var(--dark-grey);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .main-nav ul li a:hover {
+    color: var(--teal);
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media (min-width: 1400px) {
+    .header .container {
+      padding: 30px 0;
+    }
+  
+    .logo a {
+      font-size: 2.5rem;
+    }
+  
+    .main-nav ul li {
+      margin-left: 40px;
+    }
+  
+    .main-nav ul li a {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .header .container {
+      padding: 40px 0;
+    }
+  
+    .logo a {
+      font-size: 3rem;
+    }
+  
+    .main-nav ul li {
+      margin-left: 60px;
+    }
+  
+    .main-nav ul li a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .header .container {
+      padding: 50px 0;
+    }
+  
+    .logo a {
+      font-size: 3.5rem;
+    }
+  
+    .main-nav ul li {
+      margin-left: 80px;
+    }
+  
+    .main-nav ul li a {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .main-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: var(--white);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+  
+    .main-nav.open {
+      display: block;
+    }
+  
+    .main-nav ul {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .main-nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  
